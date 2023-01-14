@@ -103,3 +103,40 @@ rgba(12, 13, 19) 97%
 );
 
 }
+.wrapper::after {
+
+bottom: 0;
+
+opacity: 1;
+
+background-image: linear-gradient(
+
+to bottom,
+
+transparent 46%,
+
+rgba(12, 13, 19, 0.5) 68%,
+
+rgba(12, 13, 19) 97%
+
+);
+
+.card:hover .wrapper::before,
+
+.wrapper::after {
+
+opacity: 1;
+
+}
+
+.card:hover .wrapper::after {
+
+height: 120px;
+
+}
+
+.title {
+
+width: 100%; transition: transform 0.5s;
+
+}
